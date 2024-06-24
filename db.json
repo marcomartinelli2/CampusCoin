@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "marco@gmail.com",
+      "password": "123",
+      "id": 1
+    }
+  ],
   "highlights": [
     {
       "url": "https://www.youtube.com/embed/wCH6JkyD4d4",

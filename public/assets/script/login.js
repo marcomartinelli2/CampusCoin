@@ -1,21 +1,21 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o envio do formulário
+document.getElementById('loginForm').addEventListener('submit', async function (event) {
+    event.preventDefault();
 
-    // Obtém os valores do formulário
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    // Verifica se o usuário está cadastrado
-    var users = JSON.parse(localStorage.getItem('users')) || [];
-    var user = users.find(function(user) {
-        return user.email === email && user.password === password;
-    });
+    try {
+        let response = await fetch('http://localhost:3001/users?email=' + email + '&password=' + password);
+        let users = await response.json();
 
-    if (user) {
-        alert('Login bem-sucedido! Bem-vindo, ' + email + '.');
-        // Redireciona para a página principal
-        window.location.href = 'quiz.html';
-    } else {
-        alert('Email ou senha incorretos. Por favor, tente novamente.');
+        if (users.length > 0) {
+            alert('Login bem-sucedido! Bem-vindo, ' + email + '.');
+            window.location.href = 'index.html';
+        } else {
+            alert('Email ou senha incorretos. Por favor, tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro ao fazer login:', error);
+        alert('Ocorreu um erro ao fazer login. Por favor, tente novamente.');
     }
 });
