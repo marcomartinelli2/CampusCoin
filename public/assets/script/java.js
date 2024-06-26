@@ -23,7 +23,24 @@ const produtos = [
         "imagem": "assets/img/newsletter.png",
         "detalheAdicional": "Clique aqui",
         "link": "./newsletter.html"
+    },
+    {
+        "id": 4,
+        "titulo": "Trading View",
+        "descricao": "Gráficos para fazerem análises de seus investimentos",
+        "imagem": "assets/img/tradingview.png",
+        "detalheAdicional": "Clique aqui",
+        "link": "./TradingView.html"
+    },
+    {
+        "id": 4,
+        "titulo": "Bolsa de valores",
+        "descricao": "Acesse as cotações das ações brasileiras",
+        "imagem": "assets/img/bolsa-valores.png",
+        "detalheAdicional": "Clique aqui",
+        "link": "./bolsa-valores.html"
     }
+    
 ];
 
 // Função para criar um card
