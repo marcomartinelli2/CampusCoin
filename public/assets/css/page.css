@@ -5,20 +5,6 @@ body{
     margin-top: 55px;
 }
 
-.shop-header {
-    font-family: 'poppins', sans-serif;
-    text-align: center;
-    padding: 1em;
-    background-color: #f8f9fa;
-    margin-bottom: 1em;
-    border-radius: 15px; /* Arredondar bordas */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    transition: padding 0.3s ease; /* Transição suave */
-  }
 
   .shop-nav a {
     color: #007bff;

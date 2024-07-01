@@ -6,20 +6,6 @@ body {
     font-family: 'poppins', sans-serif;
 }
 
-.shop-header {
-    font-family: 'poppins', sans-serif;
-    text-align: center;
-    padding: -1em;
-    background-color: #f8f9fa;
-    border-radius: 15px; /* Arredondar bordas */
-    position: fixed;
-    width: 100%;
-    top: -25px;
-    left: 0;
-    z-index: 10000;
-    transition: padding 0.3s ease; /* Transição suave */
-}
-
 .small-header {
     padding: -2em; /* Reduzir ainda mais o padding */
     font-size: 0.8em; /* Reduzir o tamanho da fonte */
@@ -47,7 +33,7 @@ body {
     margin-top: 160px;
 }
 
-header > h1 {
+header > h2, h1 {
     text-align: center;
     color: #333;
     font-size: 48px;
@@ -103,6 +89,8 @@ header > p {
     font-family: "Amaranth", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: left;
+    
 }
 
 .text-title h3 {
@@ -115,12 +103,13 @@ header > p {
     font-size: 16px;
     font-family: "inter";
     color: #666666;
+    text-align: left;
 }
 
 .publication {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left !important;
 }
 
 .publication p {
@@ -132,7 +121,7 @@ header > p {
 .action {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left !important;
 }
 
 .action button {

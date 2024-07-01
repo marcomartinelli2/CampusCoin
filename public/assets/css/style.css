@@ -13,21 +13,6 @@ body {
   
 }
 
-.shop-header {
-  text-align: center;
-  padding: 1em;
-  background-color: #f8f9fa;
-  margin-bottom: 1em;
-  border-radius: 15px; /* Arredondar bordas */
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transition: padding 0.3s ease; /* Transição suave */
-}
-
-
 .small-header {
   padding: 0.5em; /* Reduzir ainda mais o padding */
   font-size: 0.8em; /* Reduzir o tamanho da fonte */
@@ -35,6 +20,9 @@ body {
 
 .shop-title {
   margin: 0;
+}
+.shop-nav{
+  margin: 0 auto;
 }
 
 .shop-nav a {

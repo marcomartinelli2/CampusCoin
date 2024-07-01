@@ -13,18 +13,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400&display=swap">
     <link rel="stylesheet" href="./assets//css/page.css">
+    <link rel="stylesheet" href="assets/css/userprofile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <title>Content Hub</title>
 </head>
 <body>
 <body class="bg-light">
-    <header class="shop-header">
-        <h1 class="shop-title">Campus Coin</h1>
-        <nav class="shop-nav">
+    <header class="header-profile" style="top: 0px;">
+        <img src="assets/img/Logo.png" alt="">
+        <nav class="shop-nav" style="transform: translateX(15%);">
             <a href="index.html">Página Principal</a> | 
             <a href="register-new-videos.html">New Videos</a> | 
             <a href="login.html">Sair</a>
         </nav>
-    </header>
+        <div class="menu">
+            <nav class="navbar">  
+            <div class="profile-dropdown">
+                <div onclick="toggle()" class="profile-dropdown-btn">
+                
+                <div class="profile-img"></div>
+                <span>
+                    João  
+                    <i class="fa-solid fa-angle-down arrow"></i>   
+                </span>
+                </div>
+                
+                <ul class="profile-dropdown-list">
+                <li class="profile-dropdown-list-item">
+                    <a href="editprofile.html">
+                    <i class="fa-regular fa-user"></i>
+                    Editar Perfil
+                    </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                    Caixa de entrada
+                    </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Análise
+                    </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                    <i class="fa-solid fa-sliders"></i>
+                    Configurações
+                    </a>
+                </li>
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                    <i class="fa-regular fa-circle-question"></i>
+                    Ajuda e suporte
+                    </a>
+                </li>
+                <li class="profile-dropdown-list-item last-item">
+                    <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Sair
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>    
+    <h1 style=" margin: 0; margin-top: 100px; display: flex; justify-content: center;">Campus Coin</h1>
     
     <div class="container-fluid px-5 pt-5">
         <h1 class="text-secondary">Content Hub</h1>
@@ -82,5 +138,6 @@
         crossorigin="anonymous"></script>
     <script type="module" src="./assets/script/script.js"></script>
     <script src="assets/script/header.js"></script>
+    <script src="assets/script/userprofile.js"></script>
 </body>
 </html>
